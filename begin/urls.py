@@ -23,4 +23,8 @@ urlpatterns = [
     path("",views.home,name='home'),
     path("about/",views.about,name='about'),
     path('jadid/',include('jadid.urls')), #transfering the control to jadid app
+
+
+    #always add this path in last (heavy path)
+    path('__reload__/',include('django_browser_reload.urls')),
 ]
