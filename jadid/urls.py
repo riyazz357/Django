@@ -7,7 +7,6 @@ urlpatterns = [
    
     path('',views.all_chai,name='all_chai'),
     path('<int:chai_id>/',views.chai_detail,name="chai_detail"),
-
-
-
+    path('chai_stores/',views.chai_store_views,name="chai_store"),
+    
 ]
